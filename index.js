@@ -4,11 +4,6 @@ const express = require('express');
 const app = express();
 // app.use(cors());
 
-
-app.use('/', (req, res) => {
-  res.send("this is es2 server deployed");
-});
-
 app.use('/useful', (req, res) => {
   data = {
     seoul: "CodeStates",
@@ -16,8 +11,15 @@ app.use('/useful', (req, res) => {
     Daegu: "CodeJJambbong",
     Gwanju: "CodeJJajang"
   };
+  res.type('application/json');
   res.send(JSON.stringify(data));
 });
+
+app.use('/', (req, res) => {
+  res.send("this is es2 server deployed");
+});
+
+
 
 app.listen(5000, () => {
   console.log("5000_ start!");
