@@ -1,0 +1,40 @@
+Arguments: 
+  /usr/local/Cellar/node/12.1.0/bin/node /usr/local/bin/yarn add cors
+
+PATH: 
+  /usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/mac/.nvm/versions/node/v12.6.0/bin:/Users/mac/.npm-global/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+Yarn version: 
+  1.16.0
+
+Node version: 
+  12.1.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: EACCES: permission denied, mkdir '/Users/mac/WebstormProjects/my-app-server/node_modules/cors'
+
+npm manifest: 
+  {
+    "name": "my-app-server",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "express": "^4.17.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
